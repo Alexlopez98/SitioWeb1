@@ -1,2 +1,50 @@
 Hola equipo aca subiremos comentarios de como administraremos los 
 trabajos.
+
+
+División en 3 miembros del grupo
+🔹 Persona 1: Estructura y contenido HTML
+
+Crear la página principal (index.html) con:
+
+Nombre de la PYME.
+
+Lista de categorías con links y una imagen de referencia cada una.
+
+Crear las páginas internas de cada categoría (categoria1.html, categoria2.html…).
+
+Armar las fichas de juegos con los datos básicos: imagen, nombre, descripción, precio.
+
+Asegurar que todos los links entre páginas funcionen.
+
+🔹 Persona 2: Estilos y diseño (CSS)
+
+Crear la hoja de estilos (style.css).
+
+Definir colores, tipografías y fondos de acuerdo al estilo elegido.
+
+Aplicar modelo de cajas (box model) para organizar contenido.
+
+Dar estilo a:
+
+Menú/categorías.
+
+Fichas de juegos (presentación clara y llamativa).
+
+Navegación (links/botones).
+
+Mejorar visualmente los mockups referenciales.
+
+🔹 Persona 3: Control de versiones y soporte
+
+Crear el repositorio en GitHub e invitar a los demás.
+
+Definir la estructura de carpetas del proyecto (/img, /css, /html).
+
+Hacer commits y controlar versiones (rama principal + ramas de cada integrante).
+
+Integrar los avances de Persona 1 y Persona 2.
+
+Resolver conflictos si aparecen y subir versiones finales.
+
+Documentar en el README.md cómo usar/navegar el proyecto.
