@@ -1,63 +1,89 @@
- <div>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoria Acción</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="/CSS/stylecategorys.css">
 </head>
 <body>
-    <div>
-    <h2>Categorías</h2>
-    <ul>
-        <li><a href="#">Todos</a></li>
-        <li><a href="./Accion.html">Accion</a></li>
-        <li><a href="./Aventura.html">Aventura</a></li>
-        <li><a href="./Deportes.html">Deportes</a></li>
-        <li><a href="./Rpg.html">Rpg</a></li>
-        <li><a href="./Simulador.html">Simulador</a></li>
-    </ul>
-</div>
-<div>
+    <!-- ===========================
+         HEADER
+    ============================ -->
+    <header>
+        <img src="/Img/GAMEZONE.png" alt="GAMEZONE" class="logo">
 
-<p><a href="../Login.html">Iniciar sesión</a></p>
+        <!-- Menú de navegación -->
+        <a href="Categorias/Categoria.html">CATEGORÍAS</a>
+        <a href="Categorias/Categoria.html">COMUNIDAD</a>
+        <a href="Categorias/Categoria.html">SOPORTE</a>
+        <a href="Categorias/Categoria.html">SIGN IN</a>
 
-
-<h1>Acción</h1>
-
-<div>
-    <form action="#" method="get">
-        <input type="search" placeholder="Buscar">
-        <button type="submit">🔍</button>
-    </form>
-</div>
-
-<br>
-
-<div>
-    <div>
-    
-      <a href="../Juegos/Accion/DragonBallSparkin.html"><img src="../Img/Juegos/header.jpg" alt="Dragon ball sparking hero " width="100" height="100"></a>
-        <div>
-            <p>Dragon ball sparking hero</p>
-            <p>CLP$ 54.500</p>
-
+        <!-- Carrito -->
+        <div class="carrito">
+            <a href="#">CARRITO</a>
         </div>
-        <a href="../Juegos/Accion/DragonBallSparkin.html">Ver Detalles</a>
+    </header>
+
+    <!-- ===========================
+         CONTENEDOR PRINCIPAL
+    ============================ -->
+    <div class="container">
+
+        <!-- Sidebar de categorías -->
+        <aside class="sidebar">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Todos</a></li>
+                <li><a href="./Accion.html">Acción</a></li>
+                <li><a href="./Aventura.html">Aventura</a></li>
+                <li><a href="./Deportes.html">Deportes</a></li>
+                <li><a href="./Rpg.html">Rpg</a></li>
+                <li><a href="./Simulador.html">Simulador</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main">
+
+            <!-- Título de la categoría -->
+            <h2>Acción</h2>
+
+            <!-- Buscador -->
+            <div class="search-box">
+                <form action="#" method="get">
+                    <input type="search" placeholder="Buscar">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+
+            <!-- Lista de juegos -->
+            <div class="game-list">
+                <!-- Juego 1 -->
+                <div class="game-card">
+                    <a href="../Juegos/Accion/DragonBallSparkin.html">
+                        <img src="../Img/Juegos/header.jpg" alt="Dragon ball sparking hero">
+                    </a>
+                    <div class="game-info">
+                        <h4>Dragon Ball Sparking Hero</h4>
+                        <p>CLP$ 54.500</p>
+                    </div>
+                    <a href="../Juegos/Accion/DragonBallSparkin.html">Ver Detalles</a>
+                </div>
+
+                <!-- Juego 2 -->
+                <div class="game-card">
+                    <a href="../Juegos/Accion/DoomEternal.html">
+                        <img src="../Img/Juegos/doom.jpg" alt="doom">
+                    </a>
+                    <div class="game-info">
+                        <h4>Doom Eternal</h4>
+                        <p>CLP$ 26.900</p>
+                    </div>
+                    <a href="../Juegos/Accion/DoomEternal.html">Ver Detalles</a>
+                </div>
+            </div>
+        </main>
     </div>
-
-    <hr>
-
-    <div>
-
-        <a href="../Juegos/Accion/DoomEternal.html"><img src="../Img/Juegos/doom.jpg" alt="doom" width="100" height="100"></a>        <div>
-            <p>Doom Eternal</p>
-            <p>CLP$ 26.900</p>
-
-        </div>
-        <a href="../Juegos/Accion/DoomEternal.html">Ver Detalles</a>
-    </div>
-
 </body>
 </html>
