@@ -1,63 +1,89 @@
-<div>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria Simulador</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Categoría Simulador</title>
+    <link rel="stylesheet" href="/CSS/stylecategorys.css">
 </head>
 <body>
-    <div>
-    <h2>Categorías</h2>
-    <ul>
-        <li><a href="#">Todos</a></li>
-        <li><a href="./Accion.html">Accion</a></li>
-        <li><a href="./Aventura.html">Aventura</a></li>
-        <li><a href="./Deportes.html">Deportes</a></li>
-        <li><a href="./Rpg.html">Rpg</a></li>
-        <li><a href="./Simulador.html">Simulador</a></li>
-    </ul>
-</div>
-<div>
+    <!-- ===========================
+         HEADER
+    ============================ -->
+    <header>
+        <img src="/Img/GAMEZONE.png" alt="GAMEZONE" class="logo">
 
-<p><a href="../Login.html">Iniciar sesión</a></p>
+        <!-- Menú de navegación -->
+        <a href="Categorias/Categoria.html">CATEGORÍAS</a>
+        <a href="Categorias/Categoria.html">COMUNIDAD</a>
+        <a href="Categorias/Categoria.html">SOPORTE</a>
+        <a href="Categorias/Categoria.html">SIGN IN</a>
 
-
-<h1>Simulador</h1>
-
-<div>
-    <form action="#" method="get">
-        <input type="search" placeholder="Buscar">
-        <button type="submit">🔍</button>
-    </form>
-</div>
-
-<br>
-
-<div>
-    <div>
-    
-      <a href="../Juegos/Simulador/Goat.html"><img src="../Img/Juegos/goat.webp" alt="Goat Simulador 3" width="100" height="100"></a>
-        <div>
-            <p>Goat Simulador III</p>
-            <p>CLP$ 5.300</p>
-
+        <!-- Carrito -->
+        <div class="carrito">
+            <a href="#">CARRITO</a>
         </div>
-        <a href="../Juegos/Simulador/Goat.html">Ver Detalles</a>
+    </header>
+
+    <!-- ===========================
+         CONTENEDOR PRINCIPAL
+    ============================ -->
+    <div class="container">
+
+        <!-- Sidebar de categorías -->
+        <aside class="sidebar">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Todos</a></li>
+                <li><a href="./Accion.html">Acción</a></li>
+                <li><a href="./Aventura.html">Aventura</a></li>
+                <li><a href="./Deportes.html">Deportes</a></li>
+                <li><a href="./Rpg.html">Rpg</a></li>
+                <li><a href="./Simulador.html">Simulador</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main">
+          
+            <!-- Título de la categoría -->
+            <h2>Simulador</h2>
+
+            <!-- Buscador -->
+            <div class="search-box">
+                <form action="#" method="get">
+                    <input type="search" placeholder="Buscar">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+
+            <!-- Lista de juegos -->
+            <div class="game-list">
+                <!-- Juego 1 -->
+                <div class="game-card">
+                    <a href="../Juegos/Simulador/Goat.html">
+                        <img src="../Img/Juegos/goat.webp" alt="Goat Simulator III">
+                    </a>
+                    <div class="game-info">
+                        <h4>Goat Simulator III</h4>
+                        <p>CLP$ 5.300</p>
+                    </div>
+                    <a href="../Juegos/Simulador/Goat.html">Ver Detalles</a>
+                </div>
+
+                <!-- Juego 2 -->
+                <div class="game-card">
+                    <a href="../Juegos/Simulador/Schedul.html">
+                        <img src="../Img/Juegos/schedul.jpg" alt="Schedule">
+                    </a>
+                    <div class="game-info">
+                        <h4>Schedule</h4>
+                        <p>CLP$ 10.500</p>
+                    </div>
+                    <a href="../Juegos/Simulador/Schedul.html">Ver Detalles</a>
+                </div>
+            </div>
+        </main>
     </div>
-
-    <hr>
-
-    <div>
-
-        <a href="../Juegos/Simulador/Schedul.html"><img src="../Img/Juegos/schedul.jpg" alt="schedul" width="100" height="100"></a>        <div>
-            <p>Schedule</p>
-            <p>CLP$ 10.500</p>
-
-        </div>
-        <a href="../Juegos/Simulador/Schedul.html">Ver Detalles</a>
-    </div>
-
 </body>
 </html>
