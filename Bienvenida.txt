@@ -7,7 +7,7 @@ trabajos.
 Proyecto grupal de Programación Web (PGY3221).
 
 ## Integrantes
-- Persona 1: Estructura HTML
+- Persona 1: Estructura HTML (Benjamin Bocaz y Johan Lopez)
 - Persona 2: Diseño CSS (Benjamin Bocaz)
 - Persona 3: Control de versiones / GitHub  (Alexander López)
 
