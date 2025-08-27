@@ -1,0 +1,215 @@
+/* ================================
+   HEADER CON LOGO
+================================= */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 0 8px 2px #000;
+    position: relative;
+    z-index: 1;
+}
+
+/* Logo */
+header .logo {
+    height: 80px; /* tamaño ajustable */
+    margin-right: 15px;
+    display: block;
+}
+
+/* Enlaces de navegación */
+header a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #fc9700;
+}
+
+/* Carrito */
+header .carrito {
+    margin-left: auto;
+    font-weight: bold;
+    color: #fc9700;
+}
+
+header .carrito:hover {
+    color: #fff;
+}
+
+/* Responsive header */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        height: 25px; /* más pequeño en móvil */
+        margin-bottom: 10px;
+    }
+}
+
+/* ================================
+   BOTÓN VOLVER FUERA DE LA FICHA
+================================= */
+.volver {
+    max-width: 900px;
+    margin: 20px auto 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.volver a {
+    display: inline-block;
+    background-color: #fc9700;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.volver a:hover {
+    background-color: #e68300;
+}
+
+
+/* ================================
+   FORMULARIO GAMEZONE
+================================= */
+
+/* Fondo general */
+body {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Título del formulario */
+h2 {
+    text-align: center;
+    color: #fc9700;
+    text-shadow: 0 2px 4px #000;
+    margin-bottom: 25px;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    color: #ddd;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1em;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    background-color: #555;
+    box-shadow: 0 0 8px #fc9700;
+}
+
+/* Botones */
+button {
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Botón enviar */
+button[type="submit"] {
+    background-color: #89c10f;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+button[type="submit"]:hover {
+    background-color: #6ea50d;
+}
+
+/* Botón limpiar */
+button[type="reset"] {
+    background-color: #e63946;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+button[type="reset"]:hover {
+    background-color: #b91c1c;
+}
+
+/* Ajuste de botones lado a lado */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* ================================
+   FOOTER
+================================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    background-color: #111;
+    color: #888;
+    font-size: 0.9em;
+}
+
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+}
