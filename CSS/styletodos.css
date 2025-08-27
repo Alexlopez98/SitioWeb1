@@ -1,0 +1,136 @@
+/* ===========================
+   GENERALES
+=========================== */
+body {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 8px 2px #000;
+}
+
+header .logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+header a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #fc9700;
+}
+
+/* Carrito con ícono */
+header .carrito {
+    margin-left: auto;
+}
+header .carrito img.icono-carrito {
+    width: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+header .carrito img.icono-carrito:hover {
+    transform: scale(1.1);
+}
+
+/* ===========================
+   CONTENIDO PRINCIPAL
+=========================== */
+.container {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buscador */
+.search-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.search-box input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+.search-box button {
+    padding: 10px;
+    border: none;
+    background-color: #fc9700;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-box button:hover {
+    background-color: #e07f00;
+}
+
+/* ===========================
+   GRID DE JUEGOS
+=========================== */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Tarjeta de juego */
+.game-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+}
+.game-card:hover {
+    transform: translateY(-5px);
+}
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.game-info h4 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+.game-info p {
+    color: #fc9700;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Botón detalles */
+.btn-detalles {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #fc9700;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.btn-detalles:hover {
+    background-color: #e07f00;
+}
