@@ -70,8 +70,12 @@ div.image{
 
 .Gameinfo h2 {
     font-size: 2.8em;
-    margin-bottom: 10px;
     color: #fff;
+    text-shadow: 
+  -1px -1px 2px #000,
+   1px -1px 2px #000,
+  -1px 1px 2px #000,
+   1px 1px 2px #000;
 }
 
 .Gameinfo p {
@@ -79,7 +83,11 @@ div.image{
     margin-bottom: 15px;
     color: #fff;
     font-weight: 600;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 
+  -1px -1px 2px #000,
+   1px -1px 2px #000,
+  -1px 1px 2px #000,
+   1px 1px 2px #000;
 }
 
 .Gameinfo a {
@@ -90,4 +98,5 @@ div.image{
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
+    box-shadow: 0 0 5px 0.5px #000;
 }
