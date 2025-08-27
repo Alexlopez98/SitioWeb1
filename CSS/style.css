@@ -4,5 +4,22 @@
 }
 
 header {
-    background-color: gray;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+}
+
+header nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header nav a.carrito {
+    color: #ff0000;
+    text-decoration: none;
+    margin-left: 200px;
 }
