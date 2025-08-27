@@ -3,40 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Golf - Catálogo de Videojuegos</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Mario Golf - GameZone</title>
+    <link rel="stylesheet" href="/CSS/stylegames.css">
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>GAMEZONE</h1>
-        <a href="Categorias/Categoria.html">CATEGORÍAS</a>
-            <a href="Categorias/Categoria.html">COMUNIDAD</a>
-            <a href="Categorias/Categoria.html">SOPORTE</a>
-            <a href="Categorias/Categoria.html">SIGN IN</a>
-            </div>
+        <img src="/Img/GAMEZONE.png" alt="GAMEZONE" class="logo">
+
+        <!-- Menú de navegación -->
+        <a href="/Categorias/Categoria.html">CATEGORÍAS</a>
+        <a href="Categorias/Categoria.html">COMUNIDAD</a>
+        <a href="Categorias/Categoria.html">SOPORTE</a>
+        <a href="/Login.html">SIGN IN</a>
+
+        <!-- Carrito -->
         <div class="carrito">
             <a href="#" class="carrito">CARRITO</a>
-        <nav>
-            <ul>
-                <li><a href="/Categorias/Deportes.html">Categoria</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
+    <!-- BOTÓN VOLVER -->
+    <div class="volver">
+        <a href="/Categorias/Deportes.html">Volver</a>
+    </div>
+
+    <!-- FICHA DEL JUEGO -->
     <main>
         <section class="ficha-juego">
-            <h2>Mario Golf</h2>
+
+            <!-- Título -->
+            <div class="titulo-categoria">
+                <h2>Mario Golf</h2>
+            </div>
+
+            <!-- Imagen del juego -->
             <img src="/Img/Juegos/mario golf.avif" alt="Imagen del juego">
-            <p><strong>Descripción:</strong> Adéntrate en el campo de golf con hasta cuatro jugadores de manera local* o en línea** y ¡juega en compañía de reconocidos personajes de la serie de Super Mario™ como Mario, Peach, Yoshi y más! Hay una gran variedad de modos, desde el golf tradicional hasta el energético golf rápido, e incluso el emocionante modo Aventura de golf. Los intuitivos controles por movimiento o el uso de botones facilitan el juego para los jugadores novatos y los más profesionales. </p>
-            <p><strong>Precio:</strong> $69.990</p>
-            <a href="/Carrito.html">Agregar al carrito</a>
+
+            <!-- Información del juego -->
+            <div class="ficha-info">
+                <p><strong>Descripción:</strong> Adéntrate en el campo de golf con hasta cuatro jugadores de manera local* o en línea** y ¡juega en compañía de reconocidos personajes de la serie de Super Mario™ como Mario, Peach, Yoshi y más! Hay una gran variedad de modos, desde el golf tradicional hasta el energético golf rápido, e incluso el emocionante modo Aventura de golf. Los intuitivos controles por movimiento o el uso de botones facilitan el juego para los jugadores novatos y los más profesionales.</p>
+                <p><strong>Precio:</strong> $69.990</p>
+                <a href="/Carrito.html">Agregar al carrito</a>
+            </div>
+
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-    <p>© 2025 GameZone</p>
-  </footer>
+        <p>© 2025 GameZone</p>
+    </footer>
 
 </body>
 </html>
