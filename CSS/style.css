@@ -7,19 +7,35 @@ header {
     background-color: #333;
     color: #fff;
     padding: 15px 40px;
+    font-size: 100%;
     display: flex;
     align-items: center;
-    font-size: 100%;
 }
 
-header nav a {
+header div a {
+    
     color: #ccc;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+header div a:hover {
+    color: #ff0000;
     text-decoration: none;
     margin-left: 15px;
 }
 
-header nav a.carrito {
+header div a.carrito {
     color: #ff0000;
-    text-decoration: none;
-    margin-left: 200px;
+    margin-left: 50px;
+}
+header div a.carrito:hover {
+    color: #ffffff;
+    margin-left: 50px;
+}
+
+div.image{
+    display: flex;
+    height: 100px;
+    size: 1px;
 }
