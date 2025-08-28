@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll('.card[data-game-title]');
     const hoverDetails = document.getElementById('game-hover-details');
     const hoverTitle = document.getElementById('hover-title');
     const hoverDescription = document.getElementById('hover-description');
     const hoverPrice = document.getElementById('hover-price');
-    const carouselImagesContainer = document.getElementById('carousel-images');
+    const carouselImagesContainer = document.querySelector('#carousel-images .carousel-inner');
 
     let hideTimeout;
 
@@ -18,28 +18,29 @@ document.addEventListener("DOMContentLoaded", function() {
         hoverDescription.textContent = description;
         hoverPrice.textContent = price;
 
-        // Limpiar carrusel
         carouselImagesContainer.innerHTML = '';
         images.forEach((imgSrc, index) => {
             const carouselItem = document.createElement('div');
             carouselItem.classList.add('carousel-item');
             if (index === 0) carouselItem.classList.add('active');
+
             const img = document.createElement('img');
             img.src = imgSrc;
             img.classList.add('d-block', 'w-100');
             img.alt = title;
+
             carouselItem.appendChild(img);
             carouselImagesContainer.appendChild(carouselItem);
         });
 
+        const gameLink = card.getAttribute('data-game-link');
         const buyButton = document.createElement('a');
-        buyButton.href = '/Categorias/Categoria.html';
+        buyButton.href = gameLink;
         buyButton.classList.add('btn', 'btn-success', 'mt-3');
         buyButton.textContent = 'Comprar';
 
         const gameInfo = hoverDetails.querySelector('.game-info');
-        const existingButton = gameInfo.querySelector('.btn-success');
-        if (existingButton) existingButton.remove();
+        gameInfo.innerHTML = '';
         gameInfo.appendChild(buyButton);
 
         hoverDetails.style.display = 'block';
@@ -51,11 +52,21 @@ document.addEventListener("DOMContentLoaded", function() {
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
 
-        let top = cardRect.top + (cardRect.height / 2) - (popupRect.height / 2);
-        let left = cardRect.left + (cardRect.width / 2) - (popupRect.width / 2);
+        let top = cardRect.top + window.scrollY + (cardRect.height / 2) - (popupRect.height / 2);
+        let left = cardRect.left + window.scrollX + (cardRect.width / 2) - (popupRect.width / 2);
 
-        top = Math.max(10, Math.min(top, windowHeight - popupRect.height - 10));
-        left = Math.max(10, Math.min(left, windowWidth - popupRect.width - 10));
+        if (top < window.scrollY + 10) {
+            top = window.scrollY + 10;
+        }
+        if (left < window.scrollX + 10) {
+            left = window.scrollX + 10;
+        }
+        if (top + popupRect.height > window.scrollY + windowHeight - 10) {
+            top = window.scrollY + windowHeight - popupRect.height - 10;
+        }
+        if (left + popupRect.width > window.scrollX + windowWidth - 10) {
+            left = window.scrollX + windowWidth - popupRect.width - 10;
+        }
 
         hoverDetails.style.top = `${top}px`;
         hoverDetails.style.left = `${left}px`;
@@ -70,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function() {
         hideTimeout = setTimeout(() => {
             hoverDetails.style.opacity = 0;
             hoverDetails.style.transform = 'scale(0.9)';
-            setTimeout(() => hoverDetails.style.display = 'none', 250);
-        }, 150);
+            setTimeout(() => hoverDetails.style.display = 'none', 200);
+        }, 100);
     };
 
     cards.forEach(card => {
@@ -79,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function() {
             clearTimeout(hideTimeout);
             showPopup(card);
         });
-
         card.addEventListener('mouseleave', hidePopup);
 
         hoverDetails.addEventListener('mouseenter', () => clearTimeout(hideTimeout));

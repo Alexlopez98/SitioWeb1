@@ -1,5 +1,7 @@
 .textore {   
     color: #ff6600;
     font-weight: bold;
-    text-shadow: 0px 4px 7px rgb(88, 88, 88);
+    text-shadow: 
+        2px 2px 2px rgb(0, 0, 0),
+        2px 2px 4px rgb(252, 252, 252);
 }

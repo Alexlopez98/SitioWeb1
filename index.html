@@ -11,44 +11,16 @@
 </head>
 
 <body>
-
     <div id="header"></div>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Img/Juegos/goat.webp" class="d-block w-100 carousel-img" alt="Goat Simulator">
-                <div class="carousel-caption d-none d-md-block text-start text-white">
-                    <h2 class="information">Goat Simulator 3</h2>
-                    <p class="lead information">$ 29.990</p>
-                    <a href="#" class="btn btn-success">Comprar</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Img/Juegos/rider c.avif" class="d-block w-100 carousel-img" alt="Rider's Republic">
-                <div class="carousel-caption d-none d-md-block text-start text-white">
-                    <h2 class="information">Rider's Republic</h2>
-                    <p class="lead information">$ 49.990</p>
-                    <a href="#" class="btn btn-success">Comprar</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Img/Juegos/dragon-ball-sparking-zero-5120x2880-24660.jpg" class="d-block w-100 carousel-img"
-                    alt="Game Header">
-                <div class="carousel-caption d-none d-md-block text-start text-white">
-                    <h2 class="information">Nuevo Lanzamiento</h2>
-                    <p class="lead information">¡Descúbrelo ahora!</p>
-                    <a href="#" class="btn btn-success">Ver más</a>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
+        <div class="carousel-indicators"></div>
+        <div class="carousel-inner"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
         </button>
@@ -56,74 +28,31 @@
 
     <div class="container my-5">
         <h2 class="text-center mb-4 textore">Juegos Recomendados</h2>
-        <div class="row g-4 justify-content-center">
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="card h-100 shadow-sm" data-game-title="Zelda: Tears of the Kingdom"
-                    data-game-desc="Aventura épica de mundo abierto. Explora el cielo y la tierra de Hyrule."
-                    data-game-price="$ 69.990"
-                    data-game-images="Img/Juegos/zelda.jpg, Img/Juegos/zelda.jpg, Img/Juegos/zelda.jpg">
-                    <img src="Img/Juegos/zelda.jpg" class="card-img-top" alt="Zelda">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Zelda: Tears of the Kingdom</h5>
-                        <p class="card-text price">$ 38.990</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="card h-100 shadow-sm" data-game-title="Kingdom Hearts III"
-                    data-game-desc="Sora se embarca en una aventura para evitar que una fuerza maligna conquiste el universo."
-                    data-game-price="$ 38.990"
-                    data-game-images="Img/Juegos/kingdom.jpg, Img/Juegos/kingdom_2.jpg, Img/Juegos/kingdom_3.jpg">
-                    <img src="Img/Juegos/kingdom.jpg" class="card-img-top" alt="Kingdom Hearts">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Kingdom Hearts III</h5>
-                        <p class="card-text price">$ 38.990</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="card h-100 shadow-sm" data-game-title="Uncharted 4"
-                    data-game-desc="Los jugadores controlan a Nathan Drake , un ex cazador de tesoros convencido de salir de su retiro por su hermano Samuel, dado por muerto."
-                    data-game-price="$ 38.990"
-                    data-game-images="Img/Juegos/uncharted.webp, Img/Juegos/uncharted.webp, Img/Juegos/uncharted.webp">
-                    <img src="Img/Juegos/uncharted.webp" class="card-img-top" alt="Uncharted 4">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Uncharted 4</h5>
-                        <p class="card-text price">$ 38.990</p>
-                    </div>
-                </div>
-            </div>
+        <div id="recommended-games" class="row g-4">
         </div>
     </div>
 
-    <div id="game-hover-details" class="hover-details">
-        <div class="hover-content">
-            <div id="hover-carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" id="carousel-images"></div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#hover-carousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#hover-carousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-            <div class="game-info">
-                <h5 id="hover-title"></h5>
-                <p id="hover-description"></p>
-                <p id="hover-price"></p>
-            </div>
+    <div class="hoverpop" id="game-hover-details">
+        <h5 id="hover-title" class="fw-bold"></h5>
+        <p id="hover-description"></p>
+        <p id="hover-price" class="fw-bold"></p>
+        <div id="carousel-images" class="carousel slide mb-2" data-bs-ride="carousel">
+            <div class="carousel-inner"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-images" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-images" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
+        <div class="game-info"></div>
     </div>
 
     <div id="footer"></div>
 
+    <script src="Js/games.js"></script>
+    <script src="Js/banner.js"></script>
+    <script src="Js/recommended.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Js/pop-up.js"></script>
     <script src="Js/footerandheader.js"></script>
