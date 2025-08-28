@@ -1,241 +1,32 @@
-
 body {
-    background-color: #1c1c1c;
-    color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #f0f0f0;
 }
 
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 20px;
-    display: flex;  
-    flex-wrap: wrap;
-    align-items: center;
-    box-shadow: 0 0 8px 2px #000;
-    position: relative;
-    z-index: 1;
+/* Fondo personalizado de la card */
+.custom-bg {
+  background-color: #8d8d8d; 
 }
 
-/* Logo */
-header .logo {
-    height: 80px; 
-    margin-right: 15px;
-    display: block;
-}
-
-/* Enlaces de navegación */
-header a {
-    color: #f0f0f0;
-    text-decoration: none;
-    margin-left: 15px;
-    transition: 0.3s;
-}
-
-header a:hover {
-    color: #fc9700;
-}
-
-/* Carrito */
-header .carrito {
-    margin-left: auto;
-    font-weight: bold;
-    color: #fc9700;
-}
-
-header .carrito:hover {
-    color: #fff;
-}
-
-/* Responsive header */
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header .logo {
-        height: 25px; 
-        margin-bottom: 10px;
-    }
-}
-
-
-.volver {
-    max-width: 900px;
-    margin: 20px auto 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.volver a {
-    display: inline-block;
-    background-color: #fc9700;
-    color: #fff;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-    transition: 0.3s;
-}
-
-.volver a:hover {
-    background-color: #e68300;
-}
-
-
-.ficha-juego {
-    display: grid;
-    grid-template-areas:
-        "titulo titulo"
-        "imagen info";
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 900px;
-    margin: 20px auto 50px auto;
-    background-color: #2a2a2a;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    box-sizing: border-box;
-    align-items: center;
-}
-
-/* Título */
-.titulo-categoria {
-    grid-area: titulo;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.titulo-categoria h2 {
-    font-size: 2em;
-    color: #fc9700;
-    text-shadow: 0 2px 4px #000;
-    margin: 0;
+/* Título del juego */
+.custom-title {
+  color: #fc9700; 
+  text-shadow: 0 2px 4px #000;
 }
 
 /* Imagen del juego */
-.ficha-juego img {
-    grid-area: imagen;
-    width: 100%;
-    max-width: 300px; 
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.7);
-    justify-self: center;
+.img-fluid {
+  max-height: 400px;
+  object-fit: cover;
 }
 
-/* Información del juego */
-.ficha-info {
-    grid-area: info;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Botón Volver */
+.volver a {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: 0.3s;
 }
 
-.ficha-info p {
-    font-size: 1.1em;
-    line-height: 1.6em;
-    margin-bottom: 20px;
-    color: #ddd;
-    text-align: justify;
-}
-
-.ficha-info p strong {
-    color: #fff;
-}
-
-.ficha-info a {
-    display: inline-block;
-    margin-top: 15px;
-    background-color: #89c10f;
-    color: #fff;
-    padding: 12px 25px;
-    font-size: 1.2em;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 6px 1px #000;
-    transition: 0.3s;
-    align-self: start;
-}
-
-.ficha-info a:hover {
-    background-color: #6ea50d;
-}
-
-
-footer {
-    text-align: center;
-    padding: 15px;
-    margin-top: 50px;
-    background-color: #111;
-    color: #888;
-    font-size: 0.9em;
-}
-
-
-
-/* Tablets */
-@media (max-width: 768px) {
-    .ficha-juego {
-        grid-template-areas:
-            "titulo"
-            "imagen"
-            "info";
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .ficha-juego img {
-        max-width: 250px;
-        margin: 0 auto;
-    }
-
-    .titulo-categoria h2 {
-        font-size: 1.7em;
-    }
-
-    .ficha-info a {
-        font-size: 1.1em;
-        padding: 10px 20px;
-    }
-}
-
-/* Móviles */
-@media (max-width: 480px) {
-    .ficha-juego img {
-        max-width: 200px;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .titulo-categoria {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .ficha-info a {
-        font-size: 1em;
-        padding: 10px 15px;
-    }
-
-    .volver a {
-        padding: 6px 12px;
-        font-size: 0.9em;
-    }
-
-    header .logo {
-        height: 25px; 
-    }
+.volver a:hover {
+  background-color: #e68300;
 }
