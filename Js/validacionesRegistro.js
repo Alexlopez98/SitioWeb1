@@ -1,35 +1,35 @@
-$("#registroForm").on("submit", function(e) {
-  e.preventDefault();
+$(document).ready(function() {
+  $("#registroForm").submit(function(e) {
+    e.preventDefault();
 
-  let password = $("#password").val();
-  let confirmPassword = $("#confirmPassword").val();
-  let fechaNacimiento = new Date($("#fechaNacimiento").val());
-  let hoy = new Date();
-  let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
-  let mes = hoy.getMonth() - fechaNacimiento.getMonth();
-  if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
-    edad--;
-  }
+    $("#errorMsg").addClass("d-none").text("");
+    $("#successMsg").addClass("d-none").text("");
 
-  // Contraseñas iguales
-  if (password !== confirmPassword) {
-    alert("X Las contraseñas no coinciden");
-    return;
-  }
+    let nombre = $("#nombre").val().trim();
+    let usuario = $("#usuario").val().trim();
+    let email = $("#email").val().trim();
+    let password = $("#password").val();
+    let confirmPassword = $("#confirmPassword").val();
+    let fechaNacimiento = $("#fechaNacimiento").val();
 
-  // Contraseña segura
-  let regexPass = /^(?=.*[A-Z])(?=.*\d).{6,18}$/;
-  if (!regexPass.test(password)) {
-    alert("X La contraseña debe tener entre 6 y 18 caracteres, incluir al menos una mayúscula y un número.");
-    return;
-  }
+    // Validaciones
+    if (!nombre || !usuario || !email || !password || !confirmPassword || !fechaNacimiento) {
+      $("#errorMsg").removeClass("d-none").text("Por favor, completa todos los campos obligatorios.");
+      return;
+    }
 
-  // Edad mínima
-  if (edad < 13) {
-    alert("x Debes tener al menos 13 años para registrarte.");
-    return;
-  }
+    if (password !== confirmPassword) {
+      $("#errorMsg").removeClass("d-none").text("Las contraseñas no coinciden.");
+      return;
+    }
 
-  alert(" Registro exitoso");
-  this.reset();
+    if (password.length < 6) {
+      $("#errorMsg").removeClass("d-none").text("La contraseña debe tener al menos 6 caracteres.");
+      return;
+    }
+
+    // Éxito
+    $("#successMsg").removeClass("d-none").text("¡Registro enviado correctamente!");
+    $(this)[0].reset();
+  });
 });
