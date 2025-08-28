@@ -1,13 +1,12 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #1c1c1c;
-  color: #f0f0f0;
+  background-color: #c2a3a3;
+  color: #ad6767;
   margin: 0;
   padding: 0;
 }
 
 .custom-bg {
-  background-color: #2e2e3f;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   padding: 2rem;
