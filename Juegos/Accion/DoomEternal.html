@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doom Eternal - GameZone</title>
-    <link rel="stylesheet" href="/CSS/stylegames.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doom Eternal - GameZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/stylegames.css">
 </head>
-<body>
+<body class="bg-dark text-light">
 
-    <!-- HEADER -->
-    <header>
-        <img src="/Img/GAMEZONE.png" alt="GAMEZONE" class="logo">
-
-        <!-- Menú de navegación -->
-        <a href="/Categorias/Categoria.html">CATEGORÍAS</a>
-        <a href="Categorias/Categoria.html">COMUNIDAD</a>
-        <a href="Categorias/Categoria.html">SOPORTE</a>
-        <a href="/Login.html">SIGN IN</a>
-
-        <!-- Carrito -->
-        <div class="carrito">
-            <a href="#" class="carrito">CARRITO</a>
-        </div>
-    </header>
-
-    <!-- BOTÓN VOLVER -->
-    <div class="volver">
-        <a href="/Categorias/Accion.html">Volver</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/Img/GAMEZONE.png" alt="GAMEZONE" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/Categorias/Categoria.html">CATEGORÍAS</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Categorias/Categoria.html">COMUNIDAD</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Categorias/Categoria.html">SOPORTE</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Login.html">SIGN IN</a></li>
+          <li class="nav-item"><a class="nav-link text-warning fw-bold" href="#">CARRITO</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- FICHA DEL JUEGO -->
-    <main>
-        <section class="ficha-juego">
+  <div class="container mt-3">
+    <a href="/Categorias/Accion.html" class="btn btn-warning">Volver</a>
+  </div>
 
-            <!-- Título -->
-            <div class="titulo-categoria">
-                <h2>Doom Eternal</h2>
-            </div>
+  <main class="container my-5">
+    <div class="card text-light shadow rounded p-4 custom-bg">
+      
+      <h2 class="text-center mb-4 custom-title">Doom Eternal</h2>
 
-            <!-- Imagen del juego -->
-            <img src="/Img/Juegos/doom.jpg" alt="Imagen del juego">
+      <div class="row align-items-center">
+        
+        <div class="col-md-5 text-center mb-3 mb-md-0">
+          <img src="/Img/Juegos/doom.jpg" alt="Imagen del juego" class="img-fluid rounded">
+        </div>
 
-            <!-- Información del juego -->
-            <div class="ficha-info">
-                <p><strong>Descripción:</strong> DOOM Eternal es un videojuego de disparos en primera persona desarrollado por id Software que pone a los jugadores en la piel del DOOM Slayer para luchar contra demonios y salvar a la humanidad de una invasión infernal. Ofrece un combate frenético y basado en la velocidad, con un sistema que exige al jugador "matar para obtener" recursos (salud, armadura y munición) al rematar demonios y usar la motosierra. Además de su intensa campaña para un jugador, el juego incluye el modo multijugador BATTLEMODE, un enfrentamiento 2 contra 1, y expansiones de historia.</p>
-                <p><strong>Precio:</strong> $26.900</p>
-                <a href="/Carrito.html">Agregar al carrito</a>
-            </div>
+        <div class="col-md-7">
+          <p><strong>Descripción:</strong> DOOM Eternal es un videojuego de disparos en primera persona desarrollado por id Software que pone a los jugadores en la piel del DOOM Slayer para luchar contra demonios y salvar a la humanidad de una invasión infernal. Ofrece un combate frenético y basado en la velocidad, con un sistema que exige al jugador "matar para obtener" recursos (salud, armadura y munición) al rematar demonios y usar la motosierra. Además de su intensa campaña para un jugador, el juego incluye el modo multijugador BATTLEMODE, un enfrentamiento 2 contra 1, y expansiones de historia.</p>
+          <p><strong>Precio:</strong> $26.900</p>
+          <a href="/Carrito.html" class="btn btn-success">Agregar al carrito</a>
+        </div>
 
-        </section>
-    </main>
+      </div>
+    </div>
+  </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 GameZone</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-secondary text-center py-3">
+    © 2025 GameZone
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
