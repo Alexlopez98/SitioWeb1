@@ -1,164 +1,86 @@
-body {
-    background-color: #8d8d8d;
+body{
+    background-color: rgb(33, 33, 33);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 0px 22% 0px 19%;
-    font-size: 100%;
-    display: flex;  
-    align-items: center;
-    box-shadow: 0 0 5px 6px #000;
-}
-header img {
-    width: 50px;
-
-}
-header div a {
-    color: #f0f0f0;
-    text-decoration: none;
-    margin-left: 15px;
-    transition: 0.5s ease;
-}
-header div a:hover {
-    color: #fc9700;
-}
-header div a.carrito {
-    color: #fc9700;
-}
-header div a.carrito:hover {
-    color: #ffffff;
-}
-header div.carrito{
-    margin-left: auto;
-}
-div.image{
-    display: flex;
-    height: 100px;
-    size: 1px;
-}
-
-header a.sing {
-    color: rgb(218, 26, 218);
-}
-
-.Banner {
-    position: relative;
-    max-width: 60%;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 50px 19%;
-    box-shadow: 0 20px 20px 1px #000;
-}
-
-.GAME {
-    position: relative;
+.carousel-img {
+    max-height: 500px;
     width: 100%;
-    height: 100%;
-}
-
-.Banner img {
-    width: 100%;
-    display: block;
-}
-
-.Banner .Gameinfo {
-    font-size: 100%;
-    position: absolute;
-    bottom: 6%;
-    left: 3%;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.Banner .Gameinfo h2 {
-    font-size: 300%;
-    color: #fff;
-    text-shadow: 
-  -1px -1px 2px #000,
-   1px -1px 2px #000,
-  -1px 1px 2px #000,
-   1px 1px 2px #000;
-}
-
-.Gameinfo p {
-    font-size: 200%;
-    margin-bottom: 15px;
-    color: #fff;
-    font-weight: 600;
-    text-shadow: 
-  -1px -1px 2px #000,
-   1px -1px 2px #000,
-  -1px 1px 2px #000,
-   1px 1px 2px #000;
-}
-
-.Gameinfo a {
-    background-color: #89c10f;
-    color: #fff;
-    padding: 12px 30px;
-    font-size: 1.1em;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0 0 5px 0.5px #000;
-}
-
-.game_down {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.game_down a {
-    text-decoration: none;
-    color: #333;
-    transition: transform 0.3s ease;
-}
-.game_down a:hover {
-    transform: scale(1.03);
-}
-.game_down .Banner {
-    max-width: 300px;
-    margin: 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #f9f9f9;
-}
-
-.game_down .Banner img {
-    width: 100%;
-    height: 180px;
     object-fit: cover;
-    display: block;
 }
 
-.Gameinfo2 {
-    background-color: #2e2e2e;
-    padding: 15px;
+.hover-details {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 450px;
+    max-width: 90vw;
+    background-color: #2b2b2b;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    padding: 1rem;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.hover-details.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hover-details .carousel-inner img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.hover-details .game-info {
+    padding-top: 1rem;
+}
+
+.hover-details h5 {
+    margin-bottom: 0.5rem;
+}
+
+.card-title{
+    color: rgb(255, 255, 255);
+    
+}
+
+.card-body{
+    box-shadow:0px 14px 10px 1px #000;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    height: 100%; 
     text-align: center;
 }
 
-.Gameinfo2 h2 {
-    color: #fff;
-    font-size: 1.2em;
-    margin-bottom: 5px;
+.price {
+    color: #ff6600;
+    font-weight: bold;
 }
 
-.Gameinfo2 .price {
-    color: #fff;
-    font-size: 1.1em;
-    font-weight: 600;
+.ingresa{
+    color: #ff6600;
+}
+
+.information{
+    text-shadow: 
+  -1px -1px 2px #000000,
+   1px -1px 2px #ffa600,
+  -1px 1px 2px #000000,
+   1px 1px 2px #000;
+}
+
+.card{
+    background-color: #2b2b2b;
+}
+
+.textore {   
+    color: #ff6600;
+    font-weight: bold;
+    text-shadow: 0px 4px 7px rgb(88, 88, 88);
 }
