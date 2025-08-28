@@ -1,6 +1,4 @@
-/* ================================
-   HEADER CON LOGO
-================================= */
+
 header {
     background-color: #333;
     color: #fff;
@@ -15,7 +13,7 @@ header {
 
 /* Logo */
 header .logo {
-    height: 80px; /* tamaño ajustable */
+    height: 80px; 
     margin-right: 15px;
     display: block;
 }
@@ -51,14 +49,12 @@ header .carrito:hover {
     }
 
     header .logo {
-        height: 25px; /* más pequeño en móvil */
+        height: 25px; 
         margin-bottom: 10px;
     }
 }
 
-/* ================================
-   BOTÓN VOLVER FUERA DE LA FICHA
-================================= */
+
 .volver {
     max-width: 900px;
     margin: 20px auto 0 auto;
@@ -84,9 +80,7 @@ header .carrito:hover {
 }
 
 
-/* ================================
-   FORMULARIO GAMEZONE
-================================= */
+
 
 /* Fondo general */
 body {
@@ -185,9 +179,7 @@ button[type="reset"]:hover {
     margin-top: 20px;
 }
 
-/* ================================
-   FOOTER
-================================= */
+
 footer {
     text-align: center;
     padding: 15px;

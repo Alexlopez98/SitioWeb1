@@ -1,6 +1,4 @@
-/* ================================
-   ESTILOS GENERALES
-================================= */
+
 body {
     background-color: #1c1c1c;
     color: #f0f0f0;
@@ -9,9 +7,7 @@ body {
     padding: 0;
 }
 
-/* ================================
-   HEADER CON LOGO
-================================= */
+
 header {
     background-color: #333;
     color: #fff;
@@ -67,9 +63,7 @@ header .carrito:hover {
     }
 }
 
-/* ================================
-   BOTÓN VOLVER FUERA DE LA FICHA
-================================= */
+
 .volver {
     max-width: 900px;
     margin: 20px auto 0 auto;
@@ -94,9 +88,7 @@ header .carrito:hover {
     background-color: #e68300;
 }
 
-/* ================================
-   FICHA DE JUEGO INDIVIDUAL (GRID)
-================================= */
+
 .ficha-juego {
     display: grid;
     grid-template-areas:
@@ -181,9 +173,7 @@ header .carrito:hover {
     background-color: #6ea50d;
 }
 
-/* ================================
-   FOOTER
-================================= */
+
 footer {
     text-align: center;
     padding: 15px;
@@ -193,9 +183,7 @@ footer {
     font-size: 0.9em;
 }
 
-/* ================================
-   MEDIA QUERIES PARA RESPONSIVE
-================================= */
+
 
 /* Tablets */
 @media (max-width: 768px) {
