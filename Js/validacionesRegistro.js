@@ -28,7 +28,7 @@ $(document).ready(function() {
       return;
     }
 
-    // Éxito
+ 
     $("#successMsg").removeClass("d-none").text("¡Registro enviado correctamente!");
     $(this)[0].reset();
   });
